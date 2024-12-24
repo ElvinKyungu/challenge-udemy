@@ -51,16 +51,17 @@ onMounted(() => {
       <p class="text-lg"><span class="font-bold">Prêt à vous mettre à la page ? </span>| Obtenez les compétences qu'il vous faut avec Udemy Business. 🚨</p>
       <IconsClose class="absolute right-5 cursor-pointer"/>
     </div>
-    <header class="flex justify-between items-center p-5 bg-white shadow-md w-full">
-      <nav class="flex items-center space-x-4">
+    <header class="flex justify-between items-center p-5 bg-white shadow-lg relative z-40 w-full">
+      <nav class="flex items-center space-x-4 w-3/5">
         <img 
           src="https://frontends.udemycdn.com/frontends-homepage/staticx/udemy/images/v7/logo-udemy.svg" 
           class="w-24" 
           alt="logo udemy"
         >
         <nuxt-link to="">Categories</nuxt-link>
-        <div class="w-full">
-          <input type="text" placeholder="Search for anything" class="border border-black outline-none py-2 w-full px-5 rounded-full">
+        <div class="w-full relative px-5 border border-black outline-none py-2 rounded-full">
+          <IconsSearch class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5"/>
+          <input type="text" placeholder="Search" class="outline-none w-full px-5">
         </div>
       </nav>
       <nav>
