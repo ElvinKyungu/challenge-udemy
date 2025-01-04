@@ -8,7 +8,7 @@ const categories = [
   { name: 'Deep Learning', count: '+2 M de participants' },
   { name: 'Artificial Intelligence (AI)', count: '+3 M de participants' },
   { name: 'Artificial Intelligence (AI)', count: '+3 M de participants' },
-  { name: 'Artificial Intelligence (AI)', count: '+3 M de participants' },
+  // { name: 'Artificial Intelligence (AI)', count: '+3 M de participants' },
 ]
 
 const courses = [
@@ -88,6 +88,11 @@ const courses = [
             <p class="font-bold">{{ course.price }} €</p>
           </div>
         </div>
+      </div>
+      <div class="mt-10">
+        <Btn bg-color="bg-white" hover-bg-color="hover:bg-gray-200" class="text-lg py-3" text-color="text-black px-5">
+          Afficher tous les cours de la categorie Science des données
+        </Btn>
       </div>
     </div>
   </section>
