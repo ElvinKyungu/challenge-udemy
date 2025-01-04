@@ -9,10 +9,10 @@ defineProps<{
 }>()
 </script>
 <template>
-  <div class="p-6 border rounded-lg hover:shadow-lg transition-shadow">
+  <div class="p-6 border rounded-lg hover:shadow-lg cursor-pointer transition-shadow">
     <div class="flex gap-4">
       <div class="w-12 h-12 flex-shrink-0">
-        <component :is="icon" class="w-full h-full text-gray-700" />
+        <img :src="icon" class="w-full h-full text-gray-700" />
       </div>
       <div>
         <h3 class="font-bold mb-2 flex items-center gap-2">
