@@ -9,8 +9,9 @@
     <main>
       <Hero />
       <CourseSection />
+      <Sponsors/>
       <BusinessSection />
-      <FuturesFutureSection />
+      <Futures />
       <Brands />
     </main>
   </div>
