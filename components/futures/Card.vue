@@ -6,10 +6,19 @@ defineProps<{
   badge?: string
   link?: string
   linkText?: string
+  isActive?: boolean
 }>()
 </script>
+
 <template>
-  <div class="p-6 border rounded-lg hover:shadow-lg cursor-pointer transition-shadow">
+  <div
+    class="p-6 border rounded-lg relative hover:bg-gray-200 cursor-pointer transition-colors"
+    :class="{'border-purple-500': isActive}"
+  >
+    <div
+      v-if="isActive"
+      class="h-full w-1 absolute bg-purple-500 top-0 left-0 rounded-l-lg"
+    ></div>
     <div class="flex gap-4">
       <div class="w-12 h-12 flex-shrink-0">
         <img :src="icon" class="w-full h-full text-gray-700" />
@@ -31,7 +40,7 @@ defineProps<{
           class="text-purple-700 hover:text-purple-800 text-sm font-medium inline-flex items-center"
         >
           {{ linkText }}
-          <IconsArrowLeft class="h-4 w-4 ml-1" />
+          <IconsArrowRight class="h-4 w-4 ml-1" />
         </NuxtLink>
       </div>
     </div>
