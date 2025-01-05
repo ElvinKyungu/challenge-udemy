@@ -10,9 +10,11 @@
       <Hero />
       <CourseSection />
       <Sponsors/>
-      <BusinessSection />
       <Futures />
+      <BusinessSection />
       <Brands />
+      <Testimonial />
+      <Footer/>
     </main>
   </div>
 </template>
