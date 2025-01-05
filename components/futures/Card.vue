@@ -13,11 +13,12 @@ defineProps<{
 <template>
   <div
     class="p-6 border rounded-lg relative hover:bg-gray-200 cursor-pointer transition-colors"
-    :class="{'border-purple-500': isActive}"
+    :class="{'bg-gray-100 border-purple-500': isActive}"
   >
+    <!-- Bord violet seulement si actif -->
     <div
       v-if="isActive"
-      class="h-full w-1 absolute bg-purple-500 top-0 left-0 rounded-l-lg"
+      class="h-full w-1 absolute bg-purple-400 top-0 left-0 rounded-l-lg"
     ></div>
     <div class="flex gap-4">
       <div class="w-12 h-12 flex-shrink-0">
@@ -40,7 +41,7 @@ defineProps<{
           class="text-purple-700 hover:text-purple-800 text-sm font-medium inline-flex items-center"
         >
           {{ linkText }}
-          <IconsArrowRight class="h-4 w-4 ml-1" />
+          <IconsArrowLeft class="h-4 w-4 ml-1" />
         </NuxtLink>
       </div>
     </div>

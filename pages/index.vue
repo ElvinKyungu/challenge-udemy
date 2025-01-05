@@ -14,6 +14,7 @@
       <BusinessSection />
       <Brands />
       <Testimonial />
+      <Footer/>
     </main>
   </div>
 </template>
